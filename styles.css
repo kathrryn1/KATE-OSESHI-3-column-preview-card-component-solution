@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400; 
+    background-color: hsl(0, 0%, 95%);
+    min-height: calc(100vh-0.1px);
+    width: 100%;
+    color: hsl(0, 0%, 95%);
+    overflow: scroll;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    height: 1440px;
+    max-width: 375px;
+    margin: 2rem auto;
+
+}
+.sedans {
+   background-color: hsl(31, 77%, 52%);
+   border-radius: 0.3rem 0.3rem 0 0;
+}
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 0.3rem 0.3rem;
+}
+.sedans, .suvs, .luxury {
+    padding: 2rem 3rem;
+    max-width: 100%;
+}
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+img, h1 {
+    margin: 1rem 0;
+}
+main p {
+    color: hsla(0, 0%, 100%, 0.75);
+    margin: 2rem 0 1rem 0;
+    line-height: 1.8;
+    word-spacing: 0.3rem;
+}
+main .btn {
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 2.5rem;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    font-size: inherit;
+    font-family: inherit;
+}
+/*main .btn:hover {
+    border: hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}*/
+main .sedans .btn {
+    color:hsl(31, 77%, 52%);
+} 
+main .sedans .btn:hover {
+    background-color: hsl(31, 77%, 52%);
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+main .suvs .btn {
+    color:hsl(184, 100%, 22%);
+}
+main .suvs .btn:hover {
+    background-color: hsl(184, 100%, 22%);
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+main .luxury .btn {
+    color:hsl(179, 100%, 13%);
+}
+main .luxury .btn:hover {
+    background-color: hsl(179, 100%, 13%);
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    margin: 1rem auto;
+    color: #000;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); }
+
+@media (min-width: 375px) {
+body {
+    overflow: hidden;
+    }
+main {
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+    height: 100%;
+    width: 100%;
+    margin: 2rem auto;
+    padding: 3rem 0;
+}
+.sedans {
+    border-radius: 0.5rem 0 0 0.5rem;   
+}
+.luxury {
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+main p {
+    margin-bottom: 3rem;
+}
+main .btn {
+    margin: 2rem 0 0.5rem 0;
+}
+.attribution {
+    margin-top: -2rem;
+}
+}
